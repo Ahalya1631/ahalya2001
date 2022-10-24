@@ -1,0 +1,20 @@
+<p>detail works!</p>
+
+
+
+<input type="button" value="GET USERS HERE" (click)="getalluserinformation()">
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>User Name</th>
+        <th>Email </th>
+    </tr>
+    <tr *ngFor="let user of user">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+    </tr>
+
+</table>
